@@ -1,0 +1,310 @@
+.uniForm{
+margin:0; padding:0;
+position:relative;
+width:100%;
+overflow:hidden;
+}
+
+/* Some generals */
+.uniForm fieldset{
+border:none;
+margin:0; padding:0;
+}
+.uniForm fieldset legend{
+margin:0; padding:0;
+}
+
+.uniForm .ctrlHolder{ /* This is the main unit that contains our form elements */
+overflow:hidden;
+margin:0; padding:0;
+clear:both;
+}
+
+.uniForm .buttonHolder{
+overflow:hidden;
+clear:both;
+}
+.uniForm .resetButton{
+}
+.uniForm .submitButton{
+}
+
+.uniForm .inlineLabel,
+.uniForm .inlineLabels .inlineLabel,
+.uniForm .blockLabels .inlineLabel{
+width:auto;
+float:none;
+margin:0 1em 0 0;
+display:inline;
+}
+.uniForm .inlineLabel input{
+}
+
+.uniForm .focused{ /* For highlighting the rows on input focus */
+}
+
+/* ########################################################################## */
+
+/* Styles for form controls where labels are in line with the input elements */
+/* Set the class of the parent (preferably to a fieldset) to .inlineLabels */
+.uniForm .inlineLabels .ctrlHolder{
+}
+.uniForm .inlineLabels label,
+.uniForm .inlineLabels .label{
+float:left;
+margin:.3em 2% 0 0; padding:0;
+line-height:100%;
+position:relative;
+}
+
+.uniForm .inlineLabels .textInput,
+.uniForm .inlineLabels .fileUpload{
+float:left;
+}
+.uniForm .inlineLabels .fileUpload{
+}
+
+.uniForm .inlineLabels .selectInput{
+float:left;
+}
+
+.uniForm .inlineLabels textarea{
+float:left;
+}
+
+.uniForm .inlineLabels .formHint{
+clear:both;
+}
+
+/* inlineLabels esthetics */
+.uniForm .inlineLabels .formHint strong{
+}
+
+
+/* ########################################################################## */
+
+/* Styles for form controls where labels are above the input elements */
+/* Set the class of the parent (preferably to a fieldset) to .blockLabels */
+.uniForm .blockLabels .ctrlHolder{
+}
+
+.uniForm .blockLabels label,
+.uniForm .blockLabels .label{
+display:block;
+float:none;
+margin:.3em 0; padding:0;
+line-height:100%;
+width:auto;
+}
+.uniForm .blockLabels .label{
+float:left;
+margin-right:3em;
+}
+
+.uniForm .blockLabels .inlineLabel{
+position:relative; top:.15em;
+}
+
+.uniForm .blockLabels .textInput,
+.uniForm .blockLabels .fileUpload{
+float:left;
+}
+.uniForm .blockLabels .fileUpload{
+}
+
+.uniForm .blockLabels .selectInput{
+display:block;
+}
+
+.uniForm .blockLabels textarea{
+float:left;
+display:block;
+}
+
+.uniForm .blockLabels .formHint{
+float:right;
+margin:0;
+clear:none;
+}
+
+/* blockLabels esthetics */
+.uniForm .blockLabels .ctrlHolder{
+}
+
+.uniForm .blockLabels .focused{
+}
+
+/* ########################################################################## */
+
+/* Focus pseudoclasses */
+.uniForm .ctrlHolder .textInput:focus{
+}
+.uniForm div.focused .textInput:focus{
+}
+.uniForm div.focused .formHint{
+}
+
+/* Required fields asterisk styling, use if needed */
+.uniForm label em,
+.uniForm .label em{
+display:block;
+position:absolute; left:100%;
+font-style:normal;
+font-weight:bold;
+}
+.uniForm .blockLabels label em,
+.uniForm .blockLabels .label em{
+position:static;
+display:inline;
+}
+
+/* ########################################################################## */
+
+/* Messages */
+.uniForm #errorMsg,
+.uniForm .error{
+}
+.uniForm #errorMsg dt,
+.uniForm #errorMsg h3{
+}
+.uniForm #errorMsg dd{
+}
+.uniForm #errorMsg ol{
+}
+.uniForm #errorMsg ol li{
+}
+.uniForm .errorField{
+}
+
+/* ########################################################################## */
+
+/* Add the following classes to your fieldsets (preferably) if you want columns */
+.uniForm .col{
+float:left;
+}
+.uniForm .columnLeft{
+float:left;
+}
+.uniForm .columnRight{
+float:right;
+}
+
+
+/* Your styles below */
+/* Keep in mind that wherever you see "Required property" it means that the property must exist, adjust it's value to your liking */
+
+/* Generals */
+.uniForm fieldset{
+  margin:1em 0; 
+}
+.uniForm fieldset legend{
+  color:#000; /* Reset IE */
+  font-weight:bold; 
+  font-size:120%; 
+}
+.uniForm .ctrlHolder{ /* This is the main unit that contains our form elements */
+/*   padding:7px;  */
+  overflow:hidden;
+  clear:both;
+  /* user prefs */
+  margin:0; padding:7px 4px;
+}
+.uniForm .buttonHolder{
+  text-align:right; /* Recommended */
+}
+.uniForm .focused{
+  background:#FFFCDF url(../images/uf_focused.png);
+  border:1px solid #EFE795; border-width:1px 0;
+  padding:6px 4px;
+}
+
+/* .inlineLabels */
+.uniForm .inlineLabels label,
+.uniForm .inlineLabels .label{
+  width:45%; /* Required property */
+}
+.uniForm .inlineLabels .textInput,
+.uniForm .inlineLabels .fileUpload{
+  width:45%; /* Required property */
+}
+.uniForm .inlineLabels .selectInput{
+  width:45%; /* Required property */
+}
+.uniForm .inlineLabels textarea{
+  width:80%; /* Required property */
+  height:6em; 
+}
+.uniForm .inlineLabels .formHint{
+  margin-top:0;
+  margin-left:47%; 
+}
+
+/* .blockLabels */
+.uniForm .blockLabels .textInput,
+.uniForm .blockLabels .fileUpload{
+  width:53%; /* Required property */
+}
+
+.uniForm .blockLabels .selectInput{
+  display:block;
+  width:53.5%; /* Required property */
+}
+.uniForm .blockLabels textarea{
+  width:86%; /* Required property */
+  height:24em; 
+}
+.uniForm .blockLabels .formHint{
+  width:45%; /* Required property */
+}
+
+.uniForm .blockLabels {
+  background:#f9f9f9;
+  border:1px solid #ccc; border-width:1px 0;
+}
+
+/* Columns */
+.uniForm .col{
+  width:47.9%; /* Required property */
+  margin:0 2% 0 0; 
+}
+.uniForm .columnLeft{
+  width:49%; /* Required property */
+}
+.uniForm .columnRight{
+  width:49%; /* Required property */
+}
+
+/* Messages */
+.uniForm #errorMsg{
+  background:#ffdfdf;
+  border:1px solid #df7d7d; border-width:1px 0;
+  margin:0 0 1em 0; padding:1em;
+}
+.uniForm .error{
+  background:#ffdfdf;
+  border:1px solid #df7d7d; border-width:1px 0;
+}
+  .uniForm #errorMsg dt,
+  .uniForm #errorMsg h3{
+    margin:0 0 .5em 0;
+    font-size:110%;
+    line-height:100%;
+    font-weight:bold;
+  }
+  .uniForm #errorMsg dd{
+    margin:0; padding:0;
+  }
+    .uniForm #errorMsg ol{
+      margin:0; padding:0;
+    }
+      .uniForm #errorMsg ol li{
+        margin:0; padding:2px;
+        list-style-position:inside;
+        border-bottom:1px dotted #df7d7d;
+        position:relative;
+      }
+    .uniForm .errorField{
+      color:#af4c4c;
+      margin:0 0 6px 0; padding:4px;
+      background:#ffbfbf;
+    }

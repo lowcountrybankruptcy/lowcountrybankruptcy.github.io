@@ -1,0 +1,182 @@
+/*reset*/
+html,body,div,span,applet,object,h1,h2,h3,h4,h5,h6,iframe,blockquote,pre,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,dd,dl,dt,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{border:0;outline:0;font-weight:inherit;font-style:inherit;font-size:100%;line-height:1;font-family:inherit;text-align:left;vertical-align:baseline;margin:0;padding:0;}
+table{border-collapse:collapse;border-spacing:0;}
+.left{float:left;}
+.right{float:right;}
+.clear{clear:both;}
+.center{margin:auto;text-align:center;}
+.hide{display:none;}
+a img,:link img,:visited img{border:none;}
+body,ul,ol,dl,td,th,caption,pre,p,blockquote,input,textarea{font-family:"Lucida Grande",Arial,"Lucida Sans Unicode",Verdana,sans-serif,Tahoma;line-height:1.6;font-size:14px;color:#000;}
+ul{list-style-type:square;margin:0;padding:0;}
+ol{list-style-type:decimal;}
+h1{font-size:34px;margin-bottom:12px;font-weight:700;font-family:Arial, "Lucida Grande", Verdana, sans-serif;}
+h2{font-size:26px;margin-bottom:10px;font-family:Arial, "Lucida Grande", Verdana, sans-serif;}
+h3{font-size:18px;margin-bottom:8px;font-family:Arial, "Lucida Grande", Verdana, sans-serif;}
+h4{font-size:16px;margin-bottom:5px;font-weight:700;font-family:Arial, "Lucida Grande", Verdana, sans-serif;}
+h5{font-size:14px;margin-bottom:5px;font-weight:700;font-family:Arial, "Lucida Grande", Verdana, sans-serif;}
+h6{font-size:14px;margin-bottom:5px;font-family:Arial, "Lucida Grande", Verdana, sans-serif;}
+blockquote{color:#666;font-style:italic;margin:0 0 18px 18px;}
+strong{font-weight:700;}
+em{font-style:italic;}
+
+/*global*/
+body {
+background:url('../images/background.png') repeat-x;
+}
+
+#header {
+background:url('../images/masthead.png') no-repeat;
+height:103px;
+width:1000px;
+margin:auto;
+}
+
+#nav {
+background:url('../images/menu_bg.png') repeat-x;
+height:35px;
+margin:-10px auto auto;
+width:898px;
+z-index:10;
+position:relative;
+}
+
+#body {
+background-color:#FFFFFF;
+margin:-25px auto auto;
+padding:50px 20px 15px;
+position:relative;
+width:858px;
+z-index:1;
+box-shadow:0 1px 10px #333;
+-webkit-box-shadow:0 1px 10px #333;
+-moz-box-shadow:0 1px 10px #333;
+filter: progid:DXImageTransform.Microsoft.Shadow(color='#969696', Direction=180, Strength=3);
+zoom:1;
+}
+
+#menu li {
+display:block;
+float:left;
+margin:0 10px;
+padding:6px 0 0;
+}
+
+#footer {
+color:#666666;
+font-size:12px;
+margin-bottom:50px;
+margin-top:18px;
+}
+
+#menu {
+padding-left:20px;
+}
+
+#menu li a {
+text-decoration: none;
+color:#fff;
+font-size: 1em;
+text-shadow: 2px 1px 3px #000000;
+}
+
+.indent {
+padding-left:35px;
+}
+
+.bold {
+font-weight:bold;
+}
+
+.frame {
+margin-top:20px;
+margin-left:21px;
+}
+
+.lowframe{
+margin-left:21px;
+}
+
+.lowframe img, .frame img {
+border:1px solid #ccc; padding:2px; background:#eee;
+}
+
+.image-holder {
+padding-top:40px;
+}
+
+.no-top {
+padding-top:35px;
+}
+
+div#slideshow img {
+height:225px;
+width:300px;
+top: 0pt; 
+left: 0pt; 
+display: none; 
+opacity: 0;
+z-index: 3; 
+border:1px solid #ccc; padding:2px; background:#eee;
+}
+
+#faq p {
+margin-bottom:35px;
+margin-top:5px;
+padding-top:0;
+}
+
+p {
+margin-top:5px;
+}
+
+body h2:first-child {
+padding-top:0;
+}
+
+h2, h3 {
+margin-bottom:0;
+padding-top:20px;
+}
+
+h3, h2 {
+color: #2B4769;
+}
+
+#body ul {
+margin-left:30px;
+margin-bottom:35px;
+}
+
+#faq p.nospace {
+margin-bottom:10px;
+}
+
+#contact-info {
+float:left;
+margin-left:20px;
+}
+
+#address {
+color:white;
+float:right;
+line-height:20px;
+margin-right:53px;
+margin-top:20px;
+text-align:right;
+}
+
+#toc {
+margin-bottom:30px;
+line-height:20px;
+}
+
+blockquote#status.success {
+background:#beffbe;
+color:#5C793C;
+}
+
+blockquote#status.failure {
+background:#ffbebe;
+color:#484848;
+}
